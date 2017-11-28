@@ -1,4 +1,4 @@
-package com.lph;
+package com.lph.LinkedList;
 
 import java.util.Hashtable;
 
