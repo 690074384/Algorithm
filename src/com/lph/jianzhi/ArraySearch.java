@@ -11,17 +11,16 @@ package com.lph.jianzhi;
  */
 
 public class ArraySearch {
-    public boolean Find(int[][] array,int n){
+    public boolean Find(int target, int [][] array) {
         int row = 0;
-        int col = array[0].length;
-        while(row<=array[0].length&&col>=0){
-            if(n == array[row][col]){
+        int col = array.length - 1;
+        while(row <= array[0].length-1 && col >=0){
+            if(target == array[row][col])
                 return true;
-            }else if(n>array[row][col]){
+            else if(target > array[row][col])
                 row++;
-            }else{
+            else
                 col--;
-            }
         }
         return false;
     }

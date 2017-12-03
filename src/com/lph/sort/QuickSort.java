@@ -10,16 +10,16 @@ public class QuickSort {
 
     public static int partition(int[]a,int low,int high){
         int key = a[low];
-        while(low<high){
-            while (a[high]>=key&&high>low){
-                high--;
-            }
-            a[low]=a[high];
+            while(low<high){
+                while (a[high]>=key&&high>low){
+                    high--;
+                }
+                a[low]=a[high];
 
-            while(a[low]<=key&&high>low){
-                low++;
-            }
-            a[high]=a[low];
+                while(a[low]<=key&&high>low){
+                    low++;
+                }
+                a[high]=a[low];
         }
 
         a[high] = key;
