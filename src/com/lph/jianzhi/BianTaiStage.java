@@ -6,12 +6,21 @@ package com.lph.jianzhi;
 public class BianTaiStage {
     public int JumpFloorII(int target) {
         int result = 1;
-        if(target==1)
+        if (target == 1)
             return 1;
-        else if(target==2)
+        else if (target == 2)
             return 2;
         else
+            return 2 * JumpFloorII(target - 1);
+    }
 
-            return 2 * JumpFloorII(target-1);
+    /**
+     * 简单
+     *
+     * @param target
+     * @return
+     */
+    public int JumpFloorII2(int target) {
+        return 1 << (target - 1);
     }
 }
