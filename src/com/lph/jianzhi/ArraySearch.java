@@ -11,7 +11,7 @@ package com.lph.jianzhi;
  */
 
 public class ArraySearch {
-    public boolean Find(int target, int [][] array) {
+    public boolean find(int target, int [][] array) {
         int row = 0;
         int col = array.length - 1;
         while(row <= array[0].length-1 && col >=0){

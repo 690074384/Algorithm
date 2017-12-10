@@ -1,4 +1,4 @@
-package com.lph.Singleton;
+package com.lph.singleton;
 
 /**
  * 双重锁校验
